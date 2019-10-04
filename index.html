@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+    <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+    <title>Mathe a.G.</title>
+    <style> 
+      html{
+        font-family: 'Merriweather';
+        overflow: hidden;
+      }
+      body {
+        padding: 0; 
+        margin: 0;
+        display: grid;
+        font-family: 'Merriweather', serif;
+        grid-template-columns: 50% 50%;
+      }
+      canvas{
+        margin: 0;
+        padding: 0;
+        width: 50%;
+        height: 50%;
+      }
+      .content{
+        height: 100vh;
+        padding: 1rem;
+        overflow-y: scroll;
+      }
+      p{
+        width: 50%;
+        text-align: left !important;
+        font-size: 0.9em;
+      }
+      .math-left-align .mjx-chtml.MJXc-display{
+        text-align: left !important;
+      }
+
+    </style>
+    <div class="content">
+      <h3>Definitionen:</h3>
+      <p style="font-size: 1em;">Geradengleichungen:</p>
+      <div id="gleichungen" style="padding-left: 0rem;"></div>
+      <h3>Ergebnisse:</h3>
+      <p style="font-size: 1em;">Schnittpunkte:</p>
+      <div id="ergebnisse" style="padding-left: 0rem;"></div>
+      <p style="font-size: 1em;">Spurpunkte:</p>
+      <div id="ergebnisse_s" style="padding-left: 0rem;"></div>
+      <p>
+
+      </p>
+    </div>
+
+    <script src="p5.js"></script>
+    <script src="p5.dom.js"></script>
+    <script src="p5.sound.js"></script>
+    <script src="sketch.js"></script>
+    <script src="achse.js"></script>
+    <script src="gerade.js"></script>
+    <script src="vector.js"></script>
+  </head>
+  <body>
+  </body>
+</html>
